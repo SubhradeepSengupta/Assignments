@@ -1,0 +1,42 @@
+﻿@page "{id:int}"
+@model DotnetAssignment1.Pages.MessageLikesAndCommentsModel
+@{
+    ViewData["Title"] = "MessageLikesAndComments";
+}
+
+<h2 style="margin-bottom:25px;">Message Likes And Comments</h2>
+
+<form method="post">
+    <table class="table table-striped">
+        <tr>
+            <th>User Id</th>
+            <th>User Name</th>
+            <th>User Message</th>
+            <th>Comment</th>
+            <th></th>
+            <th></th>
+            <th>Like</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>@Model.message.Id</td>
+            <td>@Model.message.Name</td>
+            <td>@Model.message.UserMessage</td>
+            <td>@Model.message.Comment</td>
+
+            <td><input asp-for="message.Comment" class="form-control" placeholder="Enter your comments..." /></td>
+            <td><button type="submit" class="btn btn-danger" name="submit" value="cmnt" p>Comment</button></td>
+
+            <td>@Model.message.Like</td>
+            <td><button type="submit" class="btn btn-success" name="submit" value="lyk" p>Like</button></td>
+
+            <input asp-for="message.Id" hidden />
+            <input asp-for="message.Name" hidden />
+            <input asp-for="message.UserMessage" hidden />
+            <input asp-for="message.Like" hidden />
+        </tr>
+    </table>
+</form>
+
+
+<a class="btn btn-primary" asp-page="/MessageBoard">Back</a>

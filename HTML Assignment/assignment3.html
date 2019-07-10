@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+	<head>
+		<title>Assignment 3</title>
+		<style>
+			body{
+				text-align:left;
+				}
+		</style>
+	</head>
+		
+	<body>
+		<form action="#">
+			First Name:<br><input type="text" id="uname" name="ufirstname"><br><br>
+			Last Name:<br><input type="text" id="uname" name="ulastname"><br><br>
+			Email:<br><input type="email" id="mail" name="umail"><br><br>
+			Contact Number:<br><input type="tel" id="utel" name="utel"><br><br>
+		
+			Address:<br>
+			<textarea rows="2" cols="21"></textarea><br><br>
+		
+			Username:<br><input type="text" id="usrname" name="usrname"><br><br>
+			Password:<br><input type="password" id="pass" name="pass"><br><br>
+		
+			<!--Radio Button-->
+			Gender:<br>
+				<input type="radio" id="male" name="gender" value="male" checked="true">Male</input><br>
+				<input type="radio" id="female" name="gender" value="female">Female</input><br><br>
+		
+			<!--Selection-->
+			Qualification:<br>
+				<select id="qualification" name="qualification">
+					<option label="--Select--" selected disabled hidden></option>
+					<option label="10th" value="10th"></option>
+					<option label="12th" value="12th"></option>
+					<option label="Graduation" value="graduation"></option>
+				</select><br><br>
+			Experience:<br>
+				<select id="experience" name="experience">
+					<option label="--Select--" selected disabled hidden></option>
+					<option label="1 year" value="1 year"></option>
+					<option label="2 year" value="2 year"></option>
+					<option label="3 year" value="3 year"></option>
+				</select><br><br>
+			
+			<!--Checkbox-->
+			Coding Languages:<br>
+				<input type="checkbox" id="language1" value="c">C/C++</input><br>
+				<input type="checkbox" id="language2" value="java">Java</input><br>
+				<input type="checkbox" id="language3" value="c#">C#</input><br>
+				<input type="checkbox" id="language4" value="php">PHP</input><br>
+				<input type="checkbox" id="language5" value="python">Python</input><br><br><br>
+			
+			<!--Button-->
+				<input type="submit" value="Submit"></input>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<div class='card'>
+    <div>
+      <div class='table-responsive'>
+        <table class='table'>
+          <thead>
+            <tr>
+              <th>Employee Id</th>
+              <th>Employee Name</th>
+              <th>Employee Email Address</th>
+              <th>Contact Number</th>
+              <th>Edit Employee</th>
+              <th>Delete Employee</th>
+            </tr>
+          </thead>
+  
+          <tbody  *ngFor='let employee of details'>
+            <tr>
+                <td>
+                  {{ employee.id }}
+                </td>
+              <td>
+                  {{ employee.firstName }} {{ employee.lastName }}
+              </td>
+              <td>
+                 {{ employee.userEmail }}
+              </td>
+              <td>
+                {{ employee.userContact }}
+              </td>
+              <td>
+                <button type='submit' value='Submit' class='btn btn-primary' [routerLink]="['/employee/employeeedit', employee.firstName]">Edit</button>
+              </td>
+              <td>
+                <button type='submit' value='Submit' class='btn btn-primary' (click)='delete(employee)'>Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class='panel-footer'><button type='submit' value='Submit' class='btn btn-primary' style='position: relative; left: 40%' [routerLink]="['/employee']"> Employee Add </button></div>
+    </div>
+  </div>

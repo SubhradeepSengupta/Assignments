@@ -1,0 +1,19 @@
+﻿@page
+@model DotnetAssignment1.Pages.NewMessageModel
+@{
+    ViewData["Title"] = "New Message";
+}
+
+<h2 style="margin-bottom:20px">New Message</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Name">Enter your name</label>
+        <input type="text" class="form-control" id="Name" name="Name" placeholder="Please Enter Your Name" style="margin-bottom:20px;" />
+
+        <label for="Message">Message</label>
+        <input type="text" class="form-control" id="Message" name="UserMessage" placeholder= "Enter Your Thoughts.." style="margin-bottom:20px;" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+

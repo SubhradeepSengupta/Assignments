@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+</head>
+<body>
+  <h1>Details Page for {{ messages.name }}</h1>
+  <table class='table table-striped'>
+    <thead>
+      <tr>
+        <td>Id</td>
+        <td>User Name</td>
+        <td>User Message</td>
+        <td>Comments</td>
+        <td>Like</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding-top:25px;">{{ messages.id }}</td>
+        <td style="padding-top:25px;">{{ messages.name }}</td>
+        <td style="padding-top:25px;">{{ messages.userMessage }}</td>
+        <td style="padding-top:25px;">{{ messages.comment }}</td>
+        <td style="padding-top:25px;">{{ messages.like }}</td>
+        <td>
+          <textarea class="form-control" placeholder="Write your thoughts" style="max-width: 90%;" [(ngModel)]="messages.comment" rows="3"></textarea>
+        </td>
+        <td style="padding-top:20px;"><button type="submit" class="btn btn-danger" (click)='comment(messages.comment)'>Comment</button></td>
+        <td style="padding-top:20px;"><button type="submit" class="btn btn-success" (click)='increment()'>Like</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <a [routerLink]="['/fetch-data']" class="btn btn-primary">Back</a>
+</body>
+</html>

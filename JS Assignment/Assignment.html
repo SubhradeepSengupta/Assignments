@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+	<head>
+		<title>JS Assignment</title>
+		<link rel="stylesheet" type="text/css" href="assignment.css" />
+	</head>
+	
+	<body>
+		<form>
+			<!-- Personal Information -->
+			<div id="personalinfo">
+				<div class="Name">
+					<label>First Name:</label>
+					<input type="text" id="userfirstname" name="userfirstname">
+				</div>
+				<div class="Name">
+					<label>Last Name:</label>
+					<input type="text" id="userlastname" name="userlastname">
+				</div>
+				<div class="Email">
+					<label>Email:</label>
+					<input type="email" id="usermail" name="usermail"">
+				</div>
+				<div class="ContactNo">
+					<label>Contact Number:</label>
+					<input type="tel" id="usertelephone" name="usertelephone">
+				</div>
+				<div class="Address">
+					<label>Address:</label>
+					<textarea rows="2" cols="21" id="useraddress"></textarea>
+				</div>
+			</div>
+			
+			<!-- Login Credentials -->
+			<div id="credentials">
+				<div class="Loginusername">
+					<label>Username:</label>
+					<input type="text" id="username" name="username">
+				</div>
+				<div class="Loginpassword">
+					<label>Password:</label>
+					<input type="password" id="userpassword" name="userpassword">
+				</div>
+			</div>
+			
+			<!-- Gender Information -->
+			<div id="genderinfo">
+				<label>Gender:</label>
+				<div class="Male">
+					<input type="radio" id="male" name="gender" value="male">Male</input>
+				</div>
+				<div class="Female">
+					<input type="radio" id="female" name="gender" value="female">Female</input>
+				</div>
+			</div>
+			
+			<!-- Educational Information -->
+			<div id="educationalinfo">
+				<div class="Qualification">	
+					<label>Qualification:</label>
+					<select id="qualificationid" name="qualification" style="width:120px;">
+						<option value="--Select--" selected disabled hidden>--Select--</option>
+					</select>
+				</div>
+				<div class="Experience">	
+					<label>Experience:</label>
+					<select id="experienceid" name="experience" style="width:100px;">
+						<option value="--Select--" selected disabled hidden>--Select--</option>
+					</select>
+				</div>
+				<div class="CodingLanguages">
+					<label>Coding Languages:</label>
+					<input type="checkbox" id="language1" name="lang" value="C/C++">
+					<span id="l1"></span><br>
+					<input type="checkbox" id="language2" name="lang" value="java">
+					<span id="l2"></span><br>
+					<input type="checkbox" id="language3" name="lang" value="c#">
+					<span id="l3"></span><br>
+					<input type="checkbox" id="language4" name="lang" value="php">
+					<span id="l4"></span><br>
+					<input type="checkbox" id="language5" name="lang" value="python">
+					<span id="l5"></span><br>
+				</div>
+			</div>
+			
+			<input type="submit" value="Submit" onclick=putDetails();>
+		</form>
+		
+		<script
+			src=assignment.js>
+		</script>
+	</body>
+</html>

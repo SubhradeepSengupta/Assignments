@@ -1,0 +1,37 @@
+﻿@page
+@model DotnetAssignment1.Pages.MessageBoardModel
+@{
+    ViewData["Title"] = "Message Board";
+}
+
+<h2 style="margin-bottom:20px">Message Board</h2>
+
+
+<form method="post">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>User Post</th>
+                <th>Comment</th>
+                <th>Like</th>
+                <th>View Details</th>
+            </tr>
+        </thead>
+        @foreach (var message in Model.Messages)
+        {
+        <tr>
+            <td>@message.Name</td>
+            <td>@message.UserMessage</td>
+            <td>@message.Comment</td>
+            <td>@message.Like</td>
+
+            <td><a class="btn btn-danger" asp-page="/MessageLikesAndComments" asp-route-id="@message.Id">Details</a></td>
+        </tr>
+        }
+    </table>
+
+    <a class="btn btn-primary" asp-page="/NewMessage">Post A New Message</a>
+
+</form>
+

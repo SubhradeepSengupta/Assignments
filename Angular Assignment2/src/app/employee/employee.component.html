@@ -1,0 +1,85 @@
+<div class='container'>
+    <form #form="ngForm">
+      <!-- Personal Information -->
+      <div id='PersonalInfo'>
+        <div class='Name'>
+          <label>First Name: </label>
+          <input type='text' class='form-control' name='firstName' [(ngModel)]='EmployeeObject.firstName'>
+        </div>
+        <div class='Name'>
+          <label>Last Name: </label>
+          <input type='text' class='form-control' name='lastName' [(ngModel)]='EmployeeObject.lastName'>
+        </div>
+        <div class='Email'>
+          <label>Email:</label>
+          <input type='email' id='usermail' class='form-control' name='userEmail' [(ngModel)]='EmployeeObject.userEmail'>
+        </div>
+        <div class='ContactNo'>
+          <label>Contact Number:</label>
+          <input type='tel' id='usertelephone' class='form-control' name='userNumber' [(ngModel)]='EmployeeObject.userContact'>
+        </div>
+        <div class='Address'>
+          <label>Address:</label>
+          <textarea rows='2' cols='21' id='useraddress' class='form-control' name='userAddress' [(ngModel)]='EmployeeObject.userAddress'></textarea>
+        </div>
+      </div>
+  
+      <!-- Login Credentials -->
+      <div id='credentials'>
+        <div class='Loginusername'>
+          <label>Username:</label>
+          <input type='text' id='username' class='form-control' name='userName' [(ngModel)]='EmployeeObject.userName'>
+        </div>
+        <div class='Loginpassword'>
+          <label>Password:</label>
+          <input type='password' id='userpassword' class='form-control' name='userPassword' [(ngModel)]='EmployeeObject.userPassword'>
+        </div>
+      </div>
+  
+      <!-- Gender Information -->
+      <div id='genderinfo'>
+        <label>Gender:</label>
+        <div class='Male'>
+          <input type='radio' id='male' name='gender' value='male' [(ngModel)]='EmployeeObject.userGender'>Male
+        </div>
+        <div class='Female'>
+          <input type='radio' id='female'  name='gender' value='female' [(ngModel)]='EmployeeObject.userGender'>Female
+        </div>
+      </div>
+  
+      <!-- Educational Information -->
+      <div id='educationalinfo'>
+        <div class='Qualification'>
+          <label>Qualification:</label>
+          <select id='qualificationid' class='form-control' name='userQualification' [(ngModel)]='EmployeeObject.userQualification'>
+            <option label="--Select--" selected disabled></option>
+            <option *ngFor='let qualification of userQualification'>
+              {{ qualification }}
+            </option>
+          </select>
+        </div>
+      </div>
+  
+      <div class='Experience'>
+        <label>Experience:</label>
+        <select id='experienceid' class='form-control' name='userExperience' [(ngModel)]='EmployeeObject.userExperience'>
+          <option label="--Select--" selected disabled></option>
+          <option *ngFor='let experience of userExperience'>
+            {{ experience }}
+          </option>
+        </select>
+      </div>
+  
+      <div class='CodingLanguages'>
+        <label>Coding Languages:</label>
+        <div *ngFor='let lang of coding'>
+          <input type='checkbox' (click)='languageCheck(lang.langName, $event)' />
+          {{ lang.langName }}
+        </div>
+      </div>
+  
+      <button type='submit' value='Submit' class='btn btn-primary' (click)='getDetails()'> Submit </button>
+    </form>
+  </div>
+  <br>
+  {{ EmployeeObject | json }}

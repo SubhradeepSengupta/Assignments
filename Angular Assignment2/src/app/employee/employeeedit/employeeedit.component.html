@@ -1,0 +1,35 @@
+<div class='card-body'>
+  <div>
+    <div class='table-responsive'>
+      <table class='table'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>Contact Number</th>
+          </tr>
+        </thead>
+        <tbody *ngFor='let employee of employeedetails'>
+          <tr>
+            <td>
+              <input type='text' class='form-control' style='width: 120px' name='name' [(ngModel)]='employee.firstName'>
+            </td>
+            <td>
+              <input type='text' class='form-control' style='width: 120px' name='name' [(ngModel)]='employee.lastName'>
+            </td>
+            <td>
+              <input type='email' class='form-control' style='width: 120px' name='email' [(ngModel)]='employee.userEmail'>
+            </td>
+            <td>
+              <input type='number' class='form-control' style='width: 120px' name='contact' [(ngModel)]='employee.userContact'>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <button type="submit" class='btn btn-primary' style="margin: 15px 0 0 10px" (click)='edit()'> Edit </button>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>

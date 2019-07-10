@@ -1,0 +1,14 @@
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\bin\Debug\netcoreapp2.1\DotnetAssignment1.data.deps.json
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\bin\Debug\netcoreapp2.1\DotnetAssignment1.data.runtimeconfig.json
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\bin\Debug\netcoreapp2.1\DotnetAssignment1.data.runtimeconfig.dev.json
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\bin\Debug\netcoreapp2.1\DotnetAssignment1.data.dll
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\bin\Debug\netcoreapp2.1\DotnetAssignment1.data.pdb
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\bin\Debug\netcoreapp2.1\DotnetAssignment1.core.dll
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\bin\Debug\netcoreapp2.1\DotnetAssignment1.core.pdb
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\obj\Debug\netcoreapp2.1\DotnetAssignment1.data.csprojAssemblyReference.cache
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\obj\Debug\netcoreapp2.1\DotnetAssignment1.data.csproj.CoreCompileInputs.cache
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\obj\Debug\netcoreapp2.1\DotnetAssignment1.data.AssemblyInfoInputs.cache
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\obj\Debug\netcoreapp2.1\DotnetAssignment1.data.AssemblyInfo.cs
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\obj\Debug\netcoreapp2.1\DotnetAssignment1.data.csproj.CopyComplete
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\obj\Debug\netcoreapp2.1\DotnetAssignment1.data.dll
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.data\obj\Debug\netcoreapp2.1\DotnetAssignment1.data.pdb

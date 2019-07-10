@@ -1,0 +1,25 @@
+<h1>User Posts</h1>
+
+
+<table class='table table-striped'>
+  <thead>
+    <tr>
+      <td>Id</td>
+      <td>User Name</td>
+      <td>User Message</td>
+      <td>Comment</td>
+      <td>Like</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let msg of messages">
+      <td>{{ msg.id }}</td>
+      <td>{{ msg.name }}</td>
+      <td>{{ msg.userMessage }}</td>
+      <td>{{ msg.comment }}</td>
+      <td>{{ msg.like }}</td>
+      <td><a [routerLink]="['/message-details/', msg.id]" >Details</a></td>
+    </tr>
+  </tbody>
+</table>
+  <a [routerLink]="['/add-message']" class="btn btn-primary">Post New Message</a>

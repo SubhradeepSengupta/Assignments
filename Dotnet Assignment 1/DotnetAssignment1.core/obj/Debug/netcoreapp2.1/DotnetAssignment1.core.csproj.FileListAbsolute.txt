@@ -1,0 +1,9 @@
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.core\bin\Debug\netcoreapp2.1\DotnetAssignment1.core.deps.json
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.core\bin\Debug\netcoreapp2.1\DotnetAssignment1.core.dll
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.core\bin\Debug\netcoreapp2.1\DotnetAssignment1.core.pdb
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.core\obj\Debug\netcoreapp2.1\DotnetAssignment1.core.csproj.CoreCompileInputs.cache
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.core\obj\Debug\netcoreapp2.1\DotnetAssignment1.core.AssemblyInfoInputs.cache
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.core\obj\Debug\netcoreapp2.1\DotnetAssignment1.core.AssemblyInfo.cs
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.core\obj\Debug\netcoreapp2.1\DotnetAssignment1.core.dll
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.core\obj\Debug\netcoreapp2.1\DotnetAssignment1.core.pdb
+C:\Users\subhradeep\dotnet project\dotnetAssignment1\DotnetAssignment1.core\obj\Debug\netcoreapp2.1\DotnetAssignment1.core.csprojAssemblyReference.cache
